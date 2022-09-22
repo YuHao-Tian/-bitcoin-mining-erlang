@@ -22,7 +22,7 @@ real time: 9.942 (seconds)
 the ratio CPU time to real time: 2.91  
 (server@YHT)2> the max number of process is: 52 
 ```
-## 3. Coin with most zeroes:
+## 4. Coin with most zeroes:
 
 
 
