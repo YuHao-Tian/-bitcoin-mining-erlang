@@ -1,1 +1,1 @@
-# -bitcoin-mining-erlang
+# Bitcoin Mining using Erlang
