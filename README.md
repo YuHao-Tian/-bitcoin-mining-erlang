@@ -14,16 +14,28 @@ abcdefg46276    00007f1c9a6a3566518da3f695b5b59c7564ba9cb1e20625a74e81fa2eedba1e
 For this question, we defined the workers numbers as 3 and each worker takes 10 sub-problems.
 The results are presented as follows:   
  ```erlang
+%%Server
 (server@YHT)1> server:start_server("abcdef",5,10).  
 <0.88.0>
 (server@YHT)2> abcdef3595115    0000089d8a0162df31956d2106c395ca580dd8a8e8fefdacb5cdb6196ce44484  
 (server@YHT)2> runtime: 28.906 (seconds)  
 real time: 9.942 (seconds)  
 the ratio CPU time to real time: 2.91  
-(server@YHT)2> the max number of process is: 52 
+(server@YHT)2> the max number of process is: 52  
+  
+%%Client1
+(client1@YHT)2> client:start('server@YHT',5,10).  
+  
+%%Client2
+(client2@YHT)2> client:start('server@YHT',5,10).  
+  
+%%Client3
+(client3@YHT)2> client:start('server@YHT',5,10).
 ```
-## 4. Coin with most zeroes:
-
+## 4. Coin with most zeroes(7):
+ ```erlang
+abcdef406679004    000000079ec6de3069a7920126139ea70a8199f8673f3e8dd5fc4e61894c59ea
+```
 ## 5. The largest number of working machines you were able to run your code with.
 The largest number of working machines we are able to run are roughly 800,000.
 
