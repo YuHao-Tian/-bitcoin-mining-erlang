@@ -7,7 +7,9 @@ The goal of this project is to use Erlang and the actor model to get a good solu
 The worker asks the server for the corresponding number of String according to the input Size, and when these strings are calculated, the worker will continue to ask the server for the string. Server and workers stop working until the first coin is found. In this program, the worker receives a request for mining without an upper limit on the number of coins to be mined. However, unlimited size is not necessarily the most efficient one.  
 In our project, runtime is the sum of all cpu runtimes, and realtime is the time from the start of the server to the time when the coin is found.  
 We use the control variates method to control the value of the input String and K, and only change the value of each worker processing sub-problems each time.
- ```erlang
+Suppose there are 2 workers in this case, one is the server doing the computation itself and the other is the worker.  
+From the following results, we can see that the best performance can be achieved with one worker dealing with 410 subproblems。
+ ```erlag
 (server@YHT)7> server:start_server("Xin Li:42162604",5,500). 
 <0.122.0>
 (server@YHT)8> Xin Li:421626042308670    000003bf446c378e14c64d7dc25f73353a01fcd2e4bf8434efa9c27ac6bda27d
