@@ -49,7 +49,7 @@ the ratio CPU time to real time: 1.86
 
 ## 2. The result of running your program for input 4
  ```erlang
-abcdefg46276    00007f1c9a6a3566518da3f695b5b59c7564ba9cb1e20625a74e81fa2eedba1e
+42162604qwer43433    0000c042fa25420993d4165c9a150719340a69841a5e994c27f493a60ea3b592
 ```
 ## 3. Cores used in the computation
 ### The running time for the above is reported by time for the above and report the time.  The ratio of CPU time to REAL TIME tells you how many cores were effectively used in the computation.  If you are close to 1 you have almost no parallelism (points will be subtracted).
@@ -57,14 +57,14 @@ For this question, we defined the workers numbers as 3 and each worker takes 10 
 The results are presented as follows:   
  ```erlang
 %%Server
-(server@YHT)1> server:start_server("abcdef",5,10).  
+(server@YHT)1> server:start_server("42162604!wio?dopam",5,10).                         
 <0.88.0>
-(server@YHT)2> abcdef3595115    0000089d8a0162df31956d2106c395ca580dd8a8e8fefdacb5cdb6196ce44484  
-(server@YHT)2> runtime: 28.906 (seconds)  
-real time: 9.942 (seconds)  
-the ratio CPU time to real time: 2.91  
-(server@YHT)2> the max number of process is: 52  
-  
+(server@YHT)2> 42162604!wio?dopam1825441    00000d75422a00fc2120f95e18a2f8920e982600caecd46efbed0abfab39b2de
+(server@YHT)2> runtime: 12.531 (seconds)
+real time: 4.719 (seconds)
+the ratio CPU time to real time: 2.66
+(server@YHT)2> the max number of process is: 54
+
 %%Client1
 (client1@YHT)2> client:start('server@YHT',5,10).  
   
