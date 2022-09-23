@@ -10,41 +10,41 @@ We use the control variates method to control the value of the input String and 
 Suppose there are 2 workers in this case, one is the server doing the computation itself and the other is the worker.  
 From the following results, we can see that the best performance can be achieved with one worker dealing with 410 subproblems.  
  ```erlang
-(server@YHT)7> server:start_server("Xin Li:42162604",5,500). 
-<0.122.0>
-(server@YHT)8> Xin Li:421626042308670    000003bf446c378e14c64d7dc25f73353a01fcd2e4bf8434efa9c27ac6bda27d
-(server@YHT)8> runtime: 12.031 (seconds)
-real time: 6.517 (seconds)
-the ratio CPU time to real time: 1.85
-(server@YHT)8> the max number of process is: 48
-(server@YHT)8> server:start_server("Xin Li:42162604",5,450). 
-<0.127.0>
-(server@YHT)9> Xin Li:421626042308670    000003bf446c378e14c64d7dc25f73353a01fcd2e4bf8434efa9c27ac6bda27d
-(server@YHT)9> runtime: 11.672 (seconds)
-real time: 6.217 (seconds)
+(server@YHT)1> server:start_server("42162604:Xin Li",5,500).
+<0.88.0>
+(server@YHT)2> 42162604:Xin Li571001    00000261141442d95c3a83606bfd6edddaf25bc238fd7ca31889b7dd006f6569
+(server@YHT)2> runtime: 2.438 (seconds)
+real time: 1.395 (seconds)
+the ratio CPU time to real time: 1.75 
+(server@YHT)2> the max number of process is: 48
+(server@YHT)2> server:start_server("42162604:Xin Li",5,450). 
+<0.97.0>
+(server@YHT)3> 42162604:Xin Li571001    00000261141442d95c3a83606bfd6edddaf25bc238fd7ca31889b7dd006f6569
+(server@YHT)3> runtime: 2.531 (seconds)
+real time: 1.388 (seconds)
+the ratio CPU time to real time: 1.82
+(server@YHT)3> the max number of process is: 48
+(server@YHT)3> server:start_server("42162604:Xin Li",5,430). 
+<0.102.0>
+(server@YHT)4> 42162604:Xin Li571001    00000261141442d95c3a83606bfd6edddaf25bc238fd7ca31889b7dd006f6569
+(server@YHT)4> runtime: 2.485 (seconds)
+real time: 1.334 (seconds)
+the ratio CPU time to real time: 1.86
+(server@YHT)4> the max number of process is: 48
+(server@YHT)4> server:start_server("42162604:Xin Li",5,440). 
+<0.107.0>
+(server@YHT)5> 42162604:Xin Li571001    00000261141442d95c3a83606bfd6edddaf25bc238fd7ca31889b7dd006f6569
+(server@YHT)5> runtime: 2.484 (seconds)
+real time: 1.323 (seconds)
 the ratio CPU time to real time: 1.88
-(server@YHT)9> the max number of process is: 48
-(server@YHT)9> server:start_server("Xin Li:42162604",5,430). 
-<0.132.0>
-(server@YHT)10> Xin Li:421626042308670    000003bf446c378e14c64d7dc25f73353a01fcd2e4bf8434efa9c27ac6bda27d
-(server@YHT)10> runtime: 11.984 (seconds)
-real time: 6.459 (seconds)
-the ratio CPU time to real time: 1.86
-(server@YHT)10> the max number of process is: 48
-(server@YHT)10> server:start_server("Xin Li:42162604",5,440). 
-<0.137.0>
-(server@YHT)11> Xin Li:421626042308670    000003bf446c378e14c64d7dc25f73353a01fcd2e4bf8434efa9c27ac6bda27d
-(server@YHT)11> runtime: 11.844 (seconds)
-real time: 6.212 (seconds)
-the ratio CPU time to real time: 1.91
-(server@YHT)11> the max number of process is: 48
-(server@YHT)11> server:start_server("Xin Li:42162604",5,445). 
-<0.142.0>
-(server@YHT)12> Xin Li:421626042308670    000003bf446c378e14c64d7dc25f73353a01fcd2e4bf8434efa9c27ac6bda27d
-(server@YHT)12> runtime: 11.797 (seconds)
-real time: 6.338 (seconds)
-the ratio CPU time to real time: 1.86
-(server@YHT)12> the max number of process is: 48
+(server@YHT)5> the max number of process is: 48
+(server@YHT)5> server:start_server("42162604:Xin Li",5,445). 
+<0.112.0>
+(server@YHT)6> 42162604:Xin Li571001    00000261141442d95c3a83606bfd6edddaf25bc238fd7ca31889b7dd006f6569
+(server@YHT)6> runtime: 2.516 (seconds)
+real time: 1.324 (seconds)
+the ratio CPU time to real time: 1.90
+(server@YHT)6> the max number of process is: 48
 ```
 
 ## 2. The result of running your program for input 4
