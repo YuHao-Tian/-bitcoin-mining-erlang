@@ -8,8 +8,8 @@ The worker asks the server for the corresponding number of String according to t
 In our project, runtime is the sum of all cpu runtimes, and realtime is the time from the start of the server to the time when the coin is found.  
 We use the control variates method to control the value of the input String and K, and only change the value of each worker processing sub-problems each time.
 Suppose there are 2 workers in this case, one is the server doing the computation itself and the other is the worker.  
-From the following results, we can see that the best performance can be achieved with one worker dealing with 410 subproblems。
- ```erlag
+From the following results, we can see that the best performance can be achieved with one worker dealing with 410 subproblems.  
+ ```erlang
 (server@YHT)7> server:start_server("Xin Li:42162604",5,500). 
 <0.122.0>
 (server@YHT)8> Xin Li:421626042308670    000003bf446c378e14c64d7dc25f73353a01fcd2e4bf8434efa9c27ac6bda27d
