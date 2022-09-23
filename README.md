@@ -1,7 +1,9 @@
 # Bitcoin Mining using Erlang
+## Goup members: Yuhao Tian, Xin Li
 COP5615 - Distributed Operating Systems Principles Project 1
 
 The goal of this project is to use Erlang and the actor model to get a good solution to the bitcoin mining problem that runs well on multi-core machines.  
+
 #### ** We use UFID as the prefix gator link ID.
 ## 1. Size of the work unit 
 ### Size of the work unit that you determined results in the best performance for your implementation and an explanation of how you determined it. The size of the work unit refers to the number of sub-problems that a worker gets in a single request from the boss.
