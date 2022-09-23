@@ -1,7 +1,8 @@
 # Bitcoin Mining using Erlang
 COP5615 - Distributed Operating Systems Principles Project 1
 
-The goal of this project is to use Erlang and the actor model to get a good solution to the bitcoin mining problem that runs well on multi-core machines.
+The goal of this project is to use Erlang and the actor model to get a good solution to the bitcoin mining problem that runs well on multi-core machines.  
+#### ** We use UFID as the prefix gator link ID.
 ## 1. Size of the work unit 
 ### Size of the work unit that you determined results in the best performance for your implementation and an explanation of how you determined it. The size of the work unit refers to the number of sub-problems that a worker gets in a single request from the boss.
 The worker asks the server for the corresponding number of String according to the input Size, and when these strings are calculated, the worker will continue to ask the server for the string. Server and workers stop working until the first coin is found. In this program, the worker receives a request for mining without an upper limit on the number of coins to be mined. However, unlimited size is not necessarily the most efficient one.  
@@ -76,7 +77,7 @@ the ratio CPU time to real time: 2.66
 ```
 ## 4. Coin with most zeroes(7):
  ```erlang
-abcdef406679004    000000079ec6de3069a7920126139ea70a8199f8673f3e8dd5fc4e61894c59ea
+42162604Longest?102600005    0000000029c9f5f31308d30ebc48b3947e9d397144f5c2762fe670ed1e95c652
 ```
 ## 5. The largest number of working machines you were able to run your code with.
 The largest number of working machines we are able to run are roughly 800,000.
